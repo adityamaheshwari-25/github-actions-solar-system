@@ -79,7 +79,8 @@
       runs-on: ubuntu-latest
       needs:
         - docker
-      environment: development
+      environment: 
+        name: development
       steps:
         - name: Install the kubernetes cluster
           uses: helm/kind-action@v1
